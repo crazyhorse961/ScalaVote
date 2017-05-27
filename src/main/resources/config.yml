@@ -1,8 +1,8 @@
+#Please touch here only if you know what you're actually doing.
 jars:
     Firebird: http://www.firebirdsql.org/en/jdbc-driver/
     FrontBase: http://www.frontbase.com/cgi-bin/WebObjects/FBWebSite
     DB2: http://www-01.ibm.com/support/docview.wss?uid=swg21363866
-    H2: http://www.h2database.com/html/download.html
     Informix: http://www14.software.ibm.com/webapp/download/search.jsp?go=y&rs=ifxjdbc
     Ingres: http://esd.actian.com/product/drivers/JDBC/java
     MaxDB: ftp://ftp.sap.com/pub/sapdb/bin/java/sapdbc.jar
@@ -14,3 +14,68 @@ jars:
     PostgreSQL: http://jdbc.postgresql.org/download/postgresql-9.2-1002.jdbc4.jar
     SQLite: http://www.xerial.org/maven/repository/artifact/org/xerial/sqlite-jdbc/3.7.2/sqlite-jdbc-3.7.2.jar
     H2: http://repo2.maven.org/maven2/com/h2database/h2/1.3.170/h2-1.3.170.jar
+#Vote message to broadcast to all server
+vote-message: '%player% voted at %service%'
+#Please insert up to 9 links
+links:
+  material: SIGN
+  name: 'Click me to see the voting links'
+  data: 0
+  lore: 'Here you can find all the voting links'
+  1:
+    name: MinecraftList
+    #You can disable link so if you don't have up to 9 links you can insert a glass/decorative materials
+    enable-link: true
+    link: minecraftlist.tld
+    material: SIGN
+    lore: MinecraftList vote
+  2:
+    name: ''
+    enable-link: false
+    material: STAINED_GLASS
+    data: 2
+    lore: 'Empty link slot'
+  3:
+    name: ''
+    enable-link: false
+    material: STAINED_GLASS
+    data: 2
+    lore: 'Zelda'
+  4:
+    name: ''
+    enable-link: false
+    material: STAINED_GLASS
+    data: 2
+    lore: 'love'
+  5:
+    name: ''
+    enable-link: false
+    material: STAINED_GLASS
+    data: 2
+    lore: 'kiss him'
+  6:
+    name: ''
+    enable-link: false
+    material: STAINED_GLASS
+    data: 2
+    lore: 'wife'
+  7:
+    name: ''
+    enable-link: false
+    material: STAINED_GLASS
+    data: 2
+    lore: 'memes'
+  8:
+    name: ''
+    enable-link: false
+    material: STAINED_GLASS
+    data: 2
+    lore: 'doge'
+  9:
+    name: ''
+    enable-link: false
+    material: STAINED_GLASS
+    data: 2
+    lore: 'potato'
+
+
