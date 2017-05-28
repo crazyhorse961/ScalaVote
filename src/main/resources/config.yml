@@ -29,53 +29,68 @@ links:
     link: minecraftlist.tld
     material: SIGN
     lore: MinecraftList vote
+    #It needs to be exactly the same as "outputted" by the vote-message
+    service-name: 'Minecraft-List'
   2:
     name: ''
     enable-link: false
     material: STAINED_GLASS
     data: 2
     lore: 'Empty link slot'
+    service-name: ''
   3:
     name: ''
     enable-link: false
     material: STAINED_GLASS
     data: 2
     lore: 'Zelda'
+    service-name: ''
   4:
     name: ''
     enable-link: false
     material: STAINED_GLASS
     data: 2
     lore: 'love'
+    service-name: ''
   5:
     name: ''
     enable-link: false
     material: STAINED_GLASS
     data: 2
     lore: 'kiss him'
+    service-name: ''
   6:
     name: ''
     enable-link: false
     material: STAINED_GLASS
     data: 2
     lore: 'wife'
+    service-name: ''
   7:
     name: ''
     enable-link: false
     material: STAINED_GLASS
     data: 2
     lore: 'memes'
+    service-name: ''
   8:
     name: ''
     enable-link: false
     material: STAINED_GLASS
     data: 2
     lore: 'doge'
+    service-name: ''
   9:
     name: ''
     enable-link: false
     material: STAINED_GLASS
     data: 2
     lore: 'potato'
+    service-name: ''
+#Below here, don't touch
+waiting-list: []
+waiting-numbers:
+  - 'uuid;2;service;timestamp;xxx.xx.xxx.xx
+
 
 

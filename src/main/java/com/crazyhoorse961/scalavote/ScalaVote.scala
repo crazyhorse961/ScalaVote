@@ -1,10 +1,11 @@
 package com.crazyhoorse961.scalavote
 
+import java.util
 import java.util.logging.Level
 
 import com.crazyhoorse961.scalavote.inventories.ItemUtils
 import com.crazyhoorse961.scalavote.utils.UUIDUtils
-import lib.PatPeter.SQLibrary.SQLite
+import lib.patp.sql.SQLite
 import org.bukkit.plugin.java.JavaPlugin
 
 
@@ -17,10 +18,13 @@ class ScalaVote extends JavaPlugin {
   var sqlite : SQLite = null
   var itemUtils : ItemUtils = new ItemUtils
   var uuidUtils : UUIDUtils = new UUIDUtils
+  var waitingList : util.List[String] = new util.ArrayList[String]()
 
   override def onEnable(): Unit = {
     saveDefaultConfig
     openSql
+    waitingList.addAll(getConfig.getStringList("waiting-list"))
+
   }
 
   override def onDisable(): Unit = {
@@ -31,6 +35,7 @@ class ScalaVote extends JavaPlugin {
   def getSQLite = sqlite
   def getItemUtils = itemUtils
   def getUUIDUtils = uuidUtils
+  def getWaitingList = waitingList
 
   def openSql(): Unit ={
     sqlite = new SQLite(getLogger, "ScalaVote", "sql", getDataFolder.getAbsolutePath)
